@@ -1,0 +1,14 @@
+2025-12-23T08:40:35.364Z - Starting reproduction...
+2025-12-23T08:40:35.374Z - Registering user: test1766479235374@example.com
+2025-12-23T08:40:35.555Z - Registered. Token: eyJhbGciOi...
+2025-12-23T08:40:35.556Z - Adding internship...
+2025-12-23T08:40:35.572Z - Response status: 500
+2025-12-23T08:40:35.574Z - Error: Unexpected token 'S', "Server Error" is not valid JSON
+2025-12-23T08:40:35.577Z - SyntaxError: Unexpected token 'S', "Server Error" is not valid JSON
+    at JSON.parse (<anonymous>)
+    at parseJSONFromBytes (node:internal/deps/undici/undici:5738:19)
+    at successSteps (node:internal/deps/undici/undici:5719:27)
+    at fullyReadBody (node:internal/deps/undici/undici:4609:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async consumeBody (node:internal/deps/undici/undici:5728:7)
+    at async reproduce (D:\Edu_Hire_Clone\reproduce_issue.js:58:28)

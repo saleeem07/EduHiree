@@ -1,0 +1,114 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+
+	html,
+	body,
+	#root {
+		height: 100%;
+		scroll-behavior: smooth;
+	}
+
+	body {
+		@apply antialiased text-gray-800 font-sans;
+		background-color: #f8fafc;
+		background-image:
+			radial-gradient(at 0% 0%, rgba(44, 95, 52, 0.08) 0px, transparent 50%),
+			radial-gradient(at 100% 0%, rgba(255, 215, 0, 0.08) 0px, transparent 50%),
+			radial-gradient(at 100% 100%, rgba(106, 174, 122, 0.08) 0px, transparent 50%),
+			radial-gradient(at 0% 100%, rgba(44, 95, 52, 0.05) 0px, transparent 50%);
+		background-attachment: fixed;
+	}
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		@apply font-bold tracking-tight;
+	}
+
+	a {
+		@apply transition-colors duration-200;
+		color: theme("colors.brand.green");
+	}
+}
+
+@layer components {
+	.glass {
+		@apply bg-white/70 backdrop-blur-xl border border-white/40 shadow-sm;
+	}
+
+	.glass-card {
+		@apply bg-white/60 backdrop-blur-xl border border-white/60 shadow-glass hover:shadow-glass-hover transition-all duration-300;
+	}
+
+	.glass-dark {
+		@apply bg-brand-dark/90 backdrop-blur-xl border border-white/10 shadow-lg text-white;
+	}
+
+	.btn-primary {
+		@apply inline-flex items-center justify-center bg-gradient-to-r from-brand-green to-brand-light text-white py-2.5 px-6 rounded-xl shadow-lg shadow-brand-green/20 hover:shadow-brand-green/30 hover:-translate-y-0.5 hover:scale-[1.02] active:scale-95 transition-all duration-300 font-medium tracking-wide;
+	}
+
+	.input-field {
+		@apply w-full px-4 py-3 bg-white/50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-brand-green/20 focus:border-brand-green focus:bg-white transition-all duration-200 outline-none;
+	}
+
+	.input-field-sm {
+		@apply w-full px-3 py-2 bg-white border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#2C5F34] focus:border-transparent outline-none text-sm transition-all;
+	}
+
+	.dashed-border {
+		@apply border-2 border-dashed border-gray-200;
+	}
+
+	.site-container {
+		@apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+	}
+}
+
+@layer utilities {
+	.text-gradient {
+		background: linear-gradient(135deg, #2C5F34 0%, #6AAE7A 50%, #2C5F34 100%);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-size: 200% auto;
+		animation: gradientText 6s ease infinite;
+	}
+
+	.animate-float {
+		animation: float 6s ease-in-out infinite;
+	}
+
+	@keyframes gradientText {
+		0% {
+			background-position: 0% 50%;
+		}
+
+		50% {
+			background-position: 100% 50%;
+		}
+
+		100% {
+			background-position: 0% 50%;
+		}
+	}
+
+	@keyframes float {
+		0% {
+			transform: translateY(0px);
+		}
+
+		50% {
+			transform: translateY(-10px);
+		}
+
+		100% {
+			transform: translateY(0px);
+		}
+	}
+}

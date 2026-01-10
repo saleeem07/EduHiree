@@ -1,0 +1,117 @@
+2025-12-23T08:41:57.383Z - Starting reproduction...
+2025-12-23T08:41:57.393Z - Registering user: test1766479317393@example.com
+2025-12-23T08:41:57.573Z - Registered. Token: eyJhbGciOi...
+2025-12-23T08:41:57.574Z - Adding internship...
+2025-12-23T08:41:57.595Z - Response status: 500
+2025-12-23T08:41:57.596Z - Error: Unexpected token 'S', "Server Err"... is not valid JSON
+2025-12-23T08:41:57.598Z - SyntaxError: Unexpected token 'S', "Server Err"... is not valid JSON
+    at JSON.parse (<anonymous>)
+    at parseJSONFromBytes (node:internal/deps/undici/undici:5738:19)
+    at successSteps (node:internal/deps/undici/undici:5719:27)
+    at fullyReadBody (node:internal/deps/undici/undici:4609:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async consumeBody (node:internal/deps/undici/undici:5728:7)
+    at async reproduce (D:\Edu_Hire_Clone\reproduce_issue.js:58:28)
+2025-12-23T08:42:33.779Z - Starting reproduction...
+2025-12-23T08:42:33.787Z - Registering user: test1766479353787@example.com
+2025-12-23T08:42:33.932Z - Registered. Token: eyJhbGciOi...
+2025-12-23T08:42:33.933Z - Adding internship...
+2025-12-23T08:42:33.946Z - Response status: 500
+2025-12-23T08:42:33.947Z - Error: Unexpected token 'S', "Server Err"... is not valid JSON
+2025-12-23T08:42:33.949Z - SyntaxError: Unexpected token 'S', "Server Err"... is not valid JSON
+    at JSON.parse (<anonymous>)
+    at parseJSONFromBytes (node:internal/deps/undici/undici:5738:19)
+    at successSteps (node:internal/deps/undici/undici:5719:27)
+    at fullyReadBody (node:internal/deps/undici/undici:4609:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async consumeBody (node:internal/deps/undici/undici:5728:7)
+    at async reproduce (D:\Edu_Hire_Clone\reproduce_issue.js:58:28)
+2025-12-23T08:43:00.094Z - Starting reproduction...
+2025-12-23T08:43:00.102Z - Registering user: test1766479380102@example.com
+2025-12-23T08:43:00.240Z - Registered. Token: eyJhbGciOi...
+2025-12-23T08:43:00.241Z - Adding internship...
+2025-12-23T08:43:00.252Z - Response status: 500
+2025-12-23T08:43:00.254Z - Error: Unexpected token 'S', "Server Err"... is not valid JSON
+2025-12-23T08:43:00.255Z - SyntaxError: Unexpected token 'S', "Server Err"... is not valid JSON
+    at JSON.parse (<anonymous>)
+    at parseJSONFromBytes (node:internal/deps/undici/undici:5738:19)
+    at successSteps (node:internal/deps/undici/undici:5719:27)
+    at fullyReadBody (node:internal/deps/undici/undici:4609:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async consumeBody (node:internal/deps/undici/undici:5728:7)
+    at async reproduce (D:\Edu_Hire_Clone\reproduce_issue.js:58:28)
+2025-12-23T08:43:28.816Z - Starting reproduction...
+2025-12-23T08:43:28.824Z - Registering user: test1766479408824@example.com
+2025-12-23T08:43:28.948Z - Registered. Token: eyJhbGciOi...
+2025-12-23T08:43:28.949Z - Adding internship...
+2025-12-23T08:43:28.958Z - FAILED TO SAVE. Status: 500
+2025-12-23T08:43:28.959Z - Response text: Server Error: user validation failed: profile.experience.0: Cast to [string] failed for value "[\n' +
+  '  {\n' +
+  "    title: 'Intern',\n" +
+  "    company: 'Tech Corp',\n" +
+  "    location: 'Remote',\n" +
+  "    startDate: '2024-01',\n" +
+  "    endDate: '2024-06',\n" +
+  "    description: 'Did stuff',\n" +
+  "    type: 'Internship',\n" +
+  "    role: 'Intern'\n" +
+  '  }\n' +
+  ']" (type string) at path "profile.experience.0" because of "CastError"
+2025-12-23T08:44:47.802Z - Starting reproduction...
+2025-12-23T08:44:47.812Z - Registering user: test1766479487812@example.com
+2025-12-23T08:44:48.013Z - Registered. Token: eyJhbGciOi...
+2025-12-23T08:44:48.014Z - Adding internship...
+2025-12-23T08:44:48.038Z - Response body: {
+  "profile": {
+    "personal": {
+      "firstName": "Test",
+      "lastName": "User"
+    },
+    "skills": {
+      "programming": [],
+      "frameworks": [],
+      "databases": [],
+      "tools": [],
+      "technical": [],
+      "languages": [],
+      "soft": []
+    },
+    "education": [],
+    "experience": [
+      {
+        "company": "Tech Corp",
+        "role": "Intern",
+        "type": "Internship",
+        "location": "Remote",
+        "startDate": "2024-01",
+        "endDate": "2024-06",
+        "description": "Did stuff",
+        "_id": "694a56804d2b99dabe58e6e9"
+      }
+    ],
+    "projects": [],
+    "certifications": []
+  },
+  "dashboardStats": {
+    "profileViews": 0,
+    "applications": 0,
+    "interviews": 0
+  },
+  "_id": "694a567f4d2b99dabe58e6e6",
+  "email": "test1766479487812@example.com",
+  "password": "$2b$10$pGqv/YPL8zk8M5tUwAFywu0ThVrNVgLTd6/ZmsIoNijNrUtQGfqEC",
+  "authProvider": "local",
+  "createdViaSocial": false,
+  "createdAt": "2025-12-23T08:44:47.905Z",
+  "lastUpdated": "2025-12-23T08:44:48.029Z",
+  "activityLog": [
+    {
+      "type": "profile",
+      "action": "Updated profile details",
+      "time": "2025-12-23T08:44:48.029Z",
+      "_id": "694a56804d2b99dabe58e6ea"
+    }
+  ],
+  "__v": 1
+}
+2025-12-23T08:44:48.039Z - SUCCESS: Profile saved.
