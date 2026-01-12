@@ -32,7 +32,7 @@ A modern, responsive React landing page for EduHire - a platform where students 
    npm run dev
    ```
 
-3. Open [http://localhost:5173](http://localhost:5173) in your browser.
+3. Open your deployed frontend URL (Vercel/Netlify) to use EduHire.
 
 ## Project Structure
 

@@ -1,6 +1,6 @@
 // const fetch = require('node-fetch'); // Native fetch is available in Node 18+
 
-const API_URL = 'http://localhost:5000/api/auth';
+const API_URL = 'https://eduhire-api.onrender.com/api/auth';
 
 async function run() {
     try {

@@ -2,7 +2,7 @@
 const fs = require('fs');
 const util = require('util');
 
-const API_URL = 'http://localhost:5001/api/auth';
+const API_URL = 'https://eduhire-api.onrender.com/api/auth';
 const LOG_FILE = 'reproduce_log_5001.txt';
 
 function log(message) {
